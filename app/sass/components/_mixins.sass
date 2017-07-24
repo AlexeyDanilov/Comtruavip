@@ -1,0 +1,7 @@
+@for $i from 1 through 7
+	.parent
+		.child(#{$i})
+			transition-delay: 100ms + (50ms * $i)
+			opacity: 1
+			transform: translate(0px, 0px)
+			will-change: transform

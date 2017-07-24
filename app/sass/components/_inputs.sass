@@ -1,0 +1,320 @@
+.input-big
+	width: 100%
+	border: 1px solid #cdcdcd
+	height: 45px
+	color: #000000
+	font-family: 'Roboto', sans-serif
+	font-size: 16px
+	font-weight: 300
+	line-height: 1
+	padding: 0 16px
+	-webkit-appearance: none
+	-moz-appearance: none
+	appearance: none
+	border-radius: 0px
+	transition: border-color .25s linear
+	&:hover
+		border-color: #ff9b00
+	&:focus
+		border-color: #000
+
+.input-textarea
+	width: 100%
+	border: 1px solid #cdcdcd
+	height: 180px
+	color: #000000
+	font-family: 'Roboto', sans-serif
+	font-size: 16px
+	font-weight: 300
+	line-height: 1
+	padding: 14px 16px
+	-webkit-appearance: none
+	-moz-appearance: none
+	appearance: none
+	border-radius: 0px
+	resize: none
+	transition: border-color .25s linear
+	&:hover
+		border-color: #ff9b00
+	&:focus
+		border-color: #000
+
+
+.input-file-style
+	position: relative
+	display: flex
+	align-items: center
+	cursor: pointer
+	input[type=file]
+		position: absolute
+		opacity: 0
+		top: 0
+		width: 0px
+		visibility: hidden
+
+	&::before
+		content: ''
+		display: inline-block
+		width: 13px
+		height: 27px
+		background-image: url("../img/icons/file.svg")
+		background-repeat: no-repeat
+		background-size: 13px
+		background-position: center
+		margin-right: 12px
+
+.input-file-style_title
+	color: #000000
+	font-family: 'Roboto', sans-serif
+	font-size: 13px
+	font-weight: 300
+	line-height: 16px
+	display: inline-block
+	border-bottom: 1px dotted rgba(0, 0, 0, .5)
+	transition: border-color .25s linear, color .25s linear
+	&:hover
+		border-color: #ff9b00
+		color: #ff9b00
+
+
+.select-big
+	width: 100%
+	border-radius: 0px
+	border: 1px solid #cdcdcd
+	background-image: url("../img/icons/arrow-bottom.svg")
+	background-size: 22px
+	background-repeat: no-repeat
+	background-position: 95% 50%
+	-webkit-appearance: none
+	-moz-appearance: none
+	appearance: none
+	height: 45px
+	padding: 0 28px 0 14px
+	color: #000000
+	font-family: 'Roboto', sans-serif
+	font-size: 14px
+	font-weight: 300
+	line-height: 13px
+	position: relative
+	cursor: pointer
+	outline: none
+	transition: border-color .25s linear
+	&:hover
+		border-color: #ff9b00
+	&:focus
+		border-color: #000
+
+
+.select
+	border-radius: 0px
+	border: 1px solid #cccccc
+	background-image: url("../img/icons/arrow-small.svg")
+	background-size: 13px
+	background-repeat: no-repeat
+	background-position: 95% 50%
+	-webkit-appearance: none
+	-moz-appearance: none
+	appearance: none
+	height: 32px
+	background-color: #f2f2f2
+	padding: 0 28px 0 14px
+	color: #000000
+	font-family: 'Roboto', sans-serif
+	font-size: 14px
+	font-weight: 300
+	line-height: 13px
+	position: relative
+	outline: none
+	transition: border-color .25s linear
+	&:hover
+		border-color: #ff9b00
+	&:focus
+		border-color: #000
+
+
+.input-search
+	display: inline-block
+	position: relative
+	z-index: 30
+	width: calc(100% - 168px)
+	height: 100%
+	background-color: #3d321a
+	border: none
+	border-radius: 0px
+	box-sizing: border-box
+	color: #f89919
+	font-family: 'Roboto', sans-serif
+	font-size: 16px
+	font-weight: 300
+	font-style: italic
+	line-height: 26px
+	padding: 24px 40px
+	outline: none !important
+	-webkit-appearance: none
+	-moz-appearance: none
+	appearance: none
+	float: left
+
+
+
+.radio-button
+	position: relative
+	input
+		display: none
+	label
+		display: block
+		position: relative
+		cursor: pointer
+		color: #fff
+		font-family: 'Roboto', sans-serif
+		font-size: 14px
+		font-weight: 400
+		line-height: 26px
+		vertical-align: middle
+		padding-left: 40px
+		transition: color 150ms ease-in
+		&::after
+			content: ''
+			position: absolute
+			top: 0
+			left: 0px
+			width: 26px
+			height: 26px
+			border: 1px solid rgba(255, 255, 255, 0.7)
+			transition: all 150ms ease-in
+			box-sizing: border-box
+		&::before
+			content: ''
+			position: absolute
+			top: 7px
+			left: 8px
+			width: 12px
+			height: 5px
+			border: 1px solid rgba(255, 255, 255, 0.7)
+			border-top-style: none
+			border-right-style: none
+			opacity: 0
+			transition: transform 200ms ease-in-out
+			transform: scale(0.2) rotate(-45deg) 
+		&:hover
+			&::after, &::before
+				border-color: #ff9b00
+
+
+	input:checked + label
+		&::before
+			transform: scale(1) rotate(-45deg)
+			opacity: 1
+			border-color: #ff9b00
+		&::after
+			border-color: #ff9b00
+
+
+
+
+.checkbox
+	margin-bottom: 15px
+	&:last-child
+		margin-bottom: 0
+	input
+		display: none
+	label
+		display: block
+		position: relative
+		cursor: pointer
+		color: #000000
+		font-family: 'Roboto', sans-serif
+		font-size: 14px
+		font-weight: 300
+		line-height: 26px
+		vertical-align: middle
+		padding-left: 35px
+		transition: color 150ms ease-in
+		&::after
+			content: ''
+			position: absolute
+			top: 3px
+			left: 0px
+			width: 20px
+			height: 20px
+			border: 1px solid #cccccc
+			transition: all 150ms ease-in
+			box-sizing: border-box
+		&::before
+			content: ''
+			position: absolute
+			top: 3px
+			left: 4px
+			width: 18px
+			height: 6px
+			border: 1px solid rgba(255, 255, 255, 0.7)
+			border-top-style: none
+			border-right-style: none
+			opacity: 0
+			transition: transform 200ms ease-in-out
+			transform: scale(0.2) rotate(-45deg) 
+		&:hover
+			&::after, &::before
+				border-color: #ff9b00
+
+
+	input:checked + label
+		&::before
+			transform: scale(1) rotate(-50deg)
+			opacity: 1
+			border-color: #ff9b00
+		&::after
+			border-color: #ff9b00
+
+
+
+.type-number
+	display: flex
+	width: 100%
+
+.input-number
+	width: calc(100% - 76px)
+	height: 38px
+	outline: none
+	border: none
+	border-radius: 0px
+	text-align: center
+	-webkit-appearance: none
+	color: #000000
+	font-size: 18px
+	font-weight: 400
+	line-height: 1
+	-moz-appearance: textfield
+	border: 1px solid #cccccc
+
+
+.input-number::-webkit-outer-spin-button,
+.input-number::-webkit-inner-spin-button
+	-webkit-appearance: none
+	-moz-appearance: textfield
+	margin: 0
+
+.button-remove, .button-add
+	display: flex
+	justify-content: center
+	align-items: center
+	width: 38px
+	height: 38px
+	border: 1px solid #cccccc
+	position: relative
+	transition: background-color .25s linear
+	span
+		font-weight: 100
+		font-size: 20px
+		color: #000
+	&:hover
+		background-color: #cdcdcd
+
+.button-add
+	span
+		font-size: 23px
+
+.button-remove
+	border-right: none
+.button-add
+	border-left: none

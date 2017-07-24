@@ -1,0 +1,90 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "rellax",
+        "scope": null,
+        "escapedName": "rellax",
+        "name": "rellax",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/Users/mac/Desktop/act"
+    ]
+  ],
+  "_from": "rellax@latest",
+  "_id": "rellax@1.0.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/rellax",
+  "_nodeVersion": "5.4.1",
+  "_npmOperationalInternal": {
+    "host": "packages-18-east.internal.npmjs.com",
+    "tmp": "tmp/rellax-1.0.0.tgz_1482346545910_0.2591994379181415"
+  },
+  "_npmUser": {
+    "name": "moeamaya",
+    "email": "moe@dixonandmoe.com"
+  },
+  "_npmVersion": "3.3.12",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "rellax",
+    "scope": null,
+    "escapedName": "rellax",
+    "name": "rellax",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/rellax/-/rellax-1.0.0.tgz",
+  "_shasum": "89e2a4bc73273a098f0925e6f2a18a5aaae8d0d4",
+  "_shrinkwrap": null,
+  "_spec": "rellax",
+  "_where": "/Users/mac/Desktop/act",
+  "author": {
+    "name": "Moe Amaya",
+    "email": "moe@dixonandmoe.com",
+    "url": "https://dixonandmoe.com"
+  },
+  "bugs": {
+    "url": "https://github.com/dixonandmoe/rellax/issues"
+  },
+  "dependencies": {},
+  "description": "Lightweight, vanilla javascript parallax library",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "89e2a4bc73273a098f0925e6f2a18a5aaae8d0d4",
+    "tarball": "https://registry.npmjs.org/rellax/-/rellax-1.0.0.tgz"
+  },
+  "gitHead": "96f9cb99f0130bac6a2a11e6afa10ce443e718b1",
+  "homepage": "https://dixonandmoe.com/rellax/",
+  "keywords": [
+    "parallax"
+  ],
+  "license": "MIT",
+  "main": "rellax.js",
+  "maintainers": [
+    {
+      "name": "moeamaya",
+      "email": "moe@dixonandmoe.com"
+    }
+  ],
+  "name": "rellax",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dixonandmoe/rellax.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.0"
+}

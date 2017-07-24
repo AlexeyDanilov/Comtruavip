@@ -1,0 +1,6 @@
+- var n = 0
+mixin icon(name,mod)
+	- mod = mod || ''
+	svg(class="icon icon-" + name + ' ' + mod)
+		use(xlink:href="i/sprite/sprite.svg#" + name)
+

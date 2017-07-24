@@ -1,0 +1,192 @@
+
+@keyframes "mouse-wheel" 
+	0%,to 
+		-webkit-transform: scaleY(.4) translateY(0)
+		transform: scaleY(.4) translateY(0)
+	
+	20% 
+		-webkit-transform: scaleY(1) translateY(0)
+		transform: scaleY(1) translateY(0)
+	
+	60% 
+		-webkit-transform: scaleY(.4) translateY(12px)
+		transform: scaleY(.4) translateY(12px)
+
+@keyframes "error" 
+	0%,to 
+		transform: translateX(0)
+	
+	20% 
+		transform: translateX(-6px)
+	
+	40% 
+		transform: translateX(6px)
+
+	60% 
+		transform: translateX(-4px)
+
+	80% 
+		transform: translateX(4px)
+
+	100% 
+		transform: translateX(0)
+
+@keyframes 'clouds'
+	0%,to 
+		transform: translateX(0)
+	
+	50% 
+		transform: translateX(300px)
+
+	100% 
+		transform: translateX(0)
+
+
+
+@keyframes "scrollup" 
+	0%,to 
+		transform: translateY(0)
+	
+	20% 
+		transform: translateY(0)
+	
+	60% 
+		transform: translateY(12px)
+	
+
+@keyframes "scrollupbottom" 
+	0%,to 
+		transform: translateY(0px) rotate(180deg)
+	
+	20% 
+		transform: translateY(-3px) rotate(180deg)
+	
+	60% 
+		transform: translateY(3px) rotate(180deg)
+	
+@keyframes "scrolluptop" 
+	0%,to 
+		transform: translateY(0px) rotate(0deg)
+	
+	20% 
+		transform: translateY(-3px) rotate(0deg)
+	
+	60% 
+		transform: translateY(3px) rotate(0deg)
+
+
+@keyframes "fadeIn" 
+	0% 
+		opacity: 0
+	
+	100% 
+		opacity: 1
+
+
+
+@keyframes arrows
+	0%
+		opacity: .2
+	
+	50%
+		opacity: 1
+	
+	100%
+		opacity: 0.2
+
+	
+
+@keyframes "fadeInUp" 
+	0% 
+		opacity: 0
+		transform: translate3d(0, 35px, 0)
+	
+	100% 
+		opacity: 1
+		transform: none
+	
+@keyframes "fadeInUpFull" 
+	0% 
+		opacity: 0
+		transform: translate3d(0, 100%, 0)
+	
+	100% 
+		opacity: 1
+		transform: none
+	
+
+@keyframes "fadeInRight" 
+	0% 
+		opacity: 0
+		transform: translate3d(50%, 0, 0)
+	
+	100% 
+		opacity: 1
+		transform: none
+
+
+@keyframes "fadeInLeft" 
+	0% 
+		opacity: 0
+		transform: translate3d(-30%, 0, 0)
+	
+	100% 
+		opacity: 1
+		transform: none
+
+@keyframes "handLeft" 
+	0% 
+		transform: translateX(0)
+	100% 
+		transform: translateX(-220px)
+
+@keyframes "progress" 
+	0% 
+		transform: scaleX(0)
+	100% 
+		transform: scaleX(1)
+	
+.fadein
+	animation-fill-mode: both
+	animation-iteration-count: 1	
+	animation-name: fadeIn
+	transition-timing-function: linear
+	animation-duration: 0.9s
+	
+
+	
+.mfp-with-zoom 
+	.mfp-container 
+		opacity: 0
+		-webkit-backface-visibility: hidden
+		transition: all 0.3s ease-out
+	
+
+.mfp-with-zoom.mfp-bg 
+	opacity: 0
+	-webkit-backface-visibility: hidden
+	transition: all 0.3s ease-out
+
+.mfp-with-zoom.mfp-ready 
+	.mfp-container 
+		opacity: 1
+	
+
+.mfp-with-zoom.mfp-ready.mfp-bg 
+	opacity: 0.8
+
+.mfp-with-zoom.mfp-removing 
+	.mfp-container 
+		opacity: 0
+	
+
+.mfp-with-zoom.mfp-removing.mfp-bg 
+	opacity: 0
+
+
+
+.mfp-close
+	color: #fff
+
+
+

@@ -1,0 +1,46 @@
+.ag-popup
+	position: fixed
+	width: 100%
+	height: 100%
+	z-index: 101
+	top: 0
+	pointer-events: none
+	transition: transform 0.6s $cubic
+	will-change: transform
+	overflow-x: hidden
+	overflow-y: auto
+	-webkit-overflow-scrolling: touch
+	&--to-right
+		left: 0
+		transform: translate(-100%, 0)
+	&--to-left
+		right: 0
+		transform: translate(100%, 0)
+	&--to-top
+		top: auto
+		bottom: 0
+		transform: translate(0, 100%)
+	&--to-bottom
+		transform: translate(0, -100%)
+	&--active
+		transform: none !important
+		pointer-events: auto !important
+	&--hide
+		display: none !important
+
+
+
+@media only screen and (max-width : 760px)
+	.ag-popup
+		&--to-right
+			transform: translate(0, 100%)
+		&--to-left
+			transform: translate(0, 100%)
+			top: auto
+			bottom: 0
+
+
+@supports (-ms-ime-align:auto)
+    .ag-popup
+        display: none
+    
