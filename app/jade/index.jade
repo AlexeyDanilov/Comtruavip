@@ -52,17 +52,43 @@ html(lang='ru')
 				
 			
 			section.payment
-				.container
-					.phone
-						img(src="../img/payment/iphone.png", alt="")
-					.pay
-						h2.h2.h2--lh40
-							|Make & Share Payments with Community
-						p.p
-							|Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br> Lorem ipsum dolor sit amet.
 
-						img(src="../img/payment/app-store.png", alt="")
-						img(src="../img/payment/google-play.png", alt="")
+				.phone
+					img(src="../img/payment/iphone.png", alt="")
+				.pay
+					h2.h2.h2--lh40
+						|Make & Share Payments with Community
+					p.p
+						|Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br> Lorem ipsum dolor sit amet.
+
+					.payment__btn
+						a(href="#").link__btn
+							img(src="../img/payment/app-store.png", alt="")
+						a(href="#").link__btn
+							img(src="../img/payment/google-play.png", alt="")
+
+
+			section.workflow
+				.container
+					.workflow__info
+						h3.h3
+							|Workflow
+						nav.workflow__list
+							a(href="#").workflow-link__item
+								|Preview          
+							a(href="#").workflow-link__item
+								|Shipping 
+							a(href="#").workflow-link__item
+								|Payment 
+							a(href="#").workflow-link__item
+								|Complete
+
+						h4.h4
+							|Lorem ipsum is simply
+						p.p
+							|Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+					.workflow__.phone
+						img(src="../img/workflow/iphone.png", alt="")
 				
 		include components/_footer
 
